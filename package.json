@@ -1,0 +1,26 @@
+{
+  "name": "email-template-jaoa",
+  "version": "1.0.0",
+  "description": "Static email template for JAOA etoc",
+  "main": "./src/scripts/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjsinco/email-template-jaoa.git"
+  },
+  "author": "Patrick Sinco <psinco@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjsinco/email-template-jaoa/issues"
+  },
+  "homepage": "https://github.com/pjsinco/email-template-jaoa#readme",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
