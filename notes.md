@@ -101,3 +101,6 @@ table {
 
 * [Litmus Scope](https://litmus.com/scope/)
     * Like a "View Source" for email
+
+#####Tue Dec 20 11:12:26 2016 CST
+* [localfont.com - Download fonts from googlefonts](http://www.localfont.com/)
