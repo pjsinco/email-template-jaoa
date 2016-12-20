@@ -104,3 +104,5 @@ table {
 
 #####Tue Dec 20 11:12:26 2016 CST
 * [localfont.com - Download fonts from googlefonts](http://www.localfont.com/)
+
+* [HTML | Email Design Reference](https://templates.mailchimp.com/development/html/)
