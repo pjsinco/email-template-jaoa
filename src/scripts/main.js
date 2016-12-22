@@ -1,4 +1,4 @@
-var view = require('./../views/index-responsive-play.jade');
+var view = require('./../views/index.jade');
 
 window.onload = () => {
 

@@ -1,3 +1,156 @@
+- var colorMap = {
+-  purple: {
+-    full: '#a464c5',
+-    tint: '#DBC1E8',
+-  },
+-  red: {
+-    full: '#f26046',
+-    tint: '#FABFB5',
+-  },
+-  green: {
+-    full: '#7abfb4',
+-    tint: '#D7EBE8',
+-  },
+-  blue: {
+-    full: '#4e98da',
+-    tint: '#B8D6F0',
+-  },
+- };
+
+- var articles = [
+-   {
+-     headline: "Ten Tips for Maximizing the Effectiveness of Emergency Medicine Procedure Laboratories",
+-     category: "Letters to the Editor",
+-     authors: "Joshua D. Lenchus, DO",
+-     blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588518",
+-     color: colorMap.green,
+-     free: true,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Assessment of Hospital Staff’s Knowledge of Osteopathic Manipulative Medicine: A Survey-Based Study",
+-     category: "ORIGINAL CONTRIBUTION",
+-     authors: "Jessica B. Smith-Kelly, DO; Andres Cardenas, PhD, MPH",
+-     blurb: "Osteopathic manipulative treatment can shorten hospital length of stay, yet hospital staff may be unaware of this treatment option. The authors investigated knowledge of osteopathic manipulative medicine by job category at one hospital.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588519",
+-     color: colorMap.purple,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: { nth: 1, n: 2 },
+-   },
+-   {
+-     headline: "Association Between WIC Enrollment and Exclusive Breastfeeding at 3 Months Postpartum Among Low-Income Mothers",
+-     category: "ORIGINAL CONTRIBUTION",
+-     authors: "John Francescon, OMS III; Zelalem T. Haile, PhD, MPH; David Kling, OMS III; Ilana Chertok, PhD, MSN, RN, IBCLC",
+-     blurb: "The association between exposure to the Special Supplemental Nutrition Program for Women, Infants, and Children and exclusive breastfeeding at 3 months postpartum was examined.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588520",
+-     color: colorMap.purple,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: { nth: 2, n: 2 },
+-   },
+-   {
+-     headline: "Effectiveness of Shared Medical Appointments Targeting the Triple Aim Among Patients With Overweight, Obesity, or Diabetes",
+-     category: "Review",
+-     authors: "Kristi H. Trickett, DO; Paul M. Matiaco, OMS III; Kathryn Jones, DO; Bernadette Howlett, PhD; Kathaleen Briggs Early, PhD, RDN, CDE",
+-     blurb: "Shared medical appointments represent a paradigm shift in health care. Not only have they been reported to reduce costs and improve health, but they also offer peer support, which may be effective for conditions such as obesity and diabetes.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588521",
+-     color: colorMap.purple,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Are Low-Carbohydrate Diets Safe and Effective?",
+-     category: "clinical review",
+-     authors: "Heather Fields, MD; Barbara Ruddy, MD; Mark R. Wallace, MD; Amit Shah, MD; Denise Millstine, MD",
+-     blurb: "Fields and colleagues looked at the effects of low-carbohydrate diets on weight loss, blood pressure, glucose levels, and lipid levels in this review of the literature.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588522",
+-     color: colorMap.red,
+-     free: true,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Ten Tips for Maximizing the Effectiveness of Emergency Medicine Procedure Laboratories",
+-     category: "Letters to the Editor",
+-     authors: "Joshua D. Lenchus, DO",
+-     blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588518",
+-     color: colorMap.purple,
+-     free: true,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Alternative Scheduling Models: Improving Continuity of Care, Medical Outcomes, and Graduate Medical Education in Resident Ambulatory Training",
+-     category: "Medical Education",
+-     authors: "Ali J. Hussain, PhD, DO",
+-     blurb: "Allopathic residency programs have shown improved clinical teaching and learning and increased resident satisfaction after implementing alternative scheduling models. The author urges osteopathic graduate medical education to embrace these new models.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588523",
+-     color: colorMap.purple,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Update on the Pharmacology and Legal Status of Kratom",
+-     category: "Special Communication",
+-     authors: "Walter C. Prozialeck, PhD",
+-     blurb: "Kratom is a tree whose leaves have psychoactive effects when ingested. The author provides an update on the potential medicinal value, the need for research, and the legal status of kratom.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588524",
+-     color: colorMap.purple,
+-     free: true,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Osteopathic Manipulative Treatment for Somatic Dysfunction After Acute Severe Traumatic Brain Injury",
+-     category: "Case Report",
+-     authors: "Adrienne McCallister, DO; Christopher Brown, DO; Michael Smith, DO; Hugh Ettlinger, DO; Gerard A. Baltazar, DO",
+-     blurb: "Two patients with acute severe traumatic brain injury were treated with osteopathic manipulative treatment.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588518",
+-     color: colorMap.purple,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "Bipartite Patella",
+-     category: "Clinical Images",
+-     authors: "Chandra M. Jennings, OMS IV, MPH; Lindsay Tjiattas-Saleski, DO, MBA",
+-     blurb: "Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588526",
+-     color: colorMap.red,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+-   {
+-     headline: "CME Quiz",
+-     category: "CME Quiz",
+-     blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui.",
+-     link: "http://jaoa.org/article.aspx?articleid=2588527",
+-     color: colorMap.blue,
+-     free: false,
+-     image_src: '',
+-     video: false,
+-     series: false,
+-   },
+- ];
+
 // CONTAINER FOR EMAIL
 table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
   tr
@@ -5,94 +158,48 @@ table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layou
 
       // EMAIL START
       // wrapper table
-      table(border="0" cellpadding="0" cellspacing="0" width="600")
+      table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="600")
         tr
-          td(style="padding: 36px 0px 0px 0px;")
+          td
+            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
+              tr
+                td(align="center" style="padding: 10px 0 10px 0;")
+                  // wrapper table
+                  table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="600")
+                    tr
+                      td(align="center")
+                        // content table
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%")
+                          tr
+                            td(class="body-text" align="center" style="font-family: 'Roboto', Helvetica, arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 24px; color: #c3c3c3;")
+                              | View in Browser
+
+            include ./includes/v1/header
+
+        include ./includes/v1/banner
+
+        include ./includes/v1/intro
+
+        include ./includes/v1/mixins
+
+        -for a in articles
+          +article(a)
+
+
+        // ARTICLE
+        // container table
         tr
-          td(style="box-shadow: 0px 0px 12px #888888;")
-
-
-
-
-            // HEADER
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center")
-                  // content
-                  table(border="0" cellpadding="0" cellspacing="0" width="600")
-                    tr
-                      td(align="center" bgcolor="#1A2026" style="padding: 15px 0px 15px 0px;")
-                        img(border="0" src="http://aoa-do.informz.net/aoa-do/data/images/jaoa/jaoa-logo.png" alt="JAOA logo" width="300" height="52" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 16px;")
-            
-
-
-
-            // VINTAGE BANNER
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center")
-                  // wrapper table
-                  table(border="0" cellpadding="0" cellspacing="0" width="600")
-                    tr
-                      td
-                        // content
-                        table(border="0" cellpadding="0" cellspacing="0" width="100%")
-                          tr
-                            td
-                              img(src="http://aoa-do.informz.net/aoa-do/data/images/jaoa/december-banner.png" width="600" height="300" border="0" alt="Vintage stomach illustration" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 16px;")
-
-
-
-
-
-            // INTRO
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center" bgcolor="#ffffff" style="padding: 40px 0px 40px 0px;")
-                  // wrapper table
-                  table(border="0" cellpadding="0" cellspacing="0" width="520")
-                    tr
-                      td
-                        // content
-                        table(border="0" cellpadding="0" cellspacing="0" width="31%" align="left")
-                          tr
-                            td
-                              a(href="#" target="_blank" style="text-decoration: none;")
-                                img(src="http://aoa-do.informz.net/aoa-do/data/images/jaoa/cover.jpg" width="188" height="260" border="1" alt="JAOA cover" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 16px; border: 1px solid #cccccc;")
-      
-                        table(border="0" cellpadding="0" cellspacing="0" width="58%" align="right")
-                          tr
-                            td(style="padding: 0 0 20px 0; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; text-align: left; line-height: 32px; color: #ff6633;").
-                              Lorem Ipsum Dolor
-                          tr
-                            td(style="padding: 0 0 20px 0; font-family: 'Roboto', Helvetica, arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
-                                Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-                          tr
-                            td
-                              // BUTTON
-                              table(border="0" cellpadding="0" cellspacing="0" width="100%")
-                                tr
-                                  td
-                                    table(border="0" cellspacing="0" cellpadding="0" align="center")
-                                      tr
-                                        td(style="padding: 11px 18px 11px 18px; border-top: 1px solid #ff6633; border-right: 1px solid #ff6633; border-bottom: 1px solid #ff6633; border-left: 1px solid #ff6633;" align="center")
-                                          a(href="#" style="display: inline-block; letter-spacing: .5px; font-size: 16px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ff6633; text-decoration: none; text-transform: uppercase;") SEE NEW ISSUE
-
-            // ARTICLE
-            // container table
+          td
             table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
               tr
                 td(class="padding" align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px;")
 
                   // wrapper table
-                  table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="520"  style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;")
+                  table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="520")
                     tr
                       td
-                        // content
-                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#7abfb4")
+                        // SECTION TITLE
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#a464c5")
                           tr
                             td(class="section-title" align="center")
                               table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480")
@@ -100,213 +207,77 @@ table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layou
                                   // vertical spacer
                                   td(style="padding: 5px 25px 10px 25px; font-size: 0;")
                                 tr
-                                  td(style="border-top: 4px solid #d7ebe8; font-size: 0;" width="100%")
-                                tr
-                                  td(style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
-                                    RESPONISIVE TO THE EDITOR
-
-                        // headline
-                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
-                          tr
-                            td(class="padding" style="padding: 10px 0px 20px 0px;")
-                              a(href="#" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #7abfb4;").
-                                Ten Tips for Maximizing the Effectiveness of Emergency Medicine Procedure Laboratories
-                          tr
-                            td(class="padding" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; color: #666666;").
-                              Joshua D. Lenchus, DO
-                          tr
-                            td(class="padding" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; font-style: italic; color: #666666;").
-                              The Journal of the American Osteopathic Association, December 2016, Vol. 116, 762. doi:10.7556/jaoa.2016.150
-                          tr
-                            td(class="padding" style="padding: 0px 0px 20px 0px;")
-                              // BUTTON
-                              table(width="100%" border="0" cellspacing="0" cellpadding="0")
-                                tr
-                                  td(align="center" style="padding: 0;")
-                                    table(border="0" cellspacing="0" cellpadding="0")
-                                      tr
-                                        td(align="center")
-                                          a(href="#" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #7abfb4; border-top: 10px solid #7abfb4; border-bottom: 10px solid #7abfb4; border-left: 20px solid #7abfb4; border-right: 20px solid #7abfb4; display: inline-block;").
-                                            READ NOW
-
-
-
-            // ARTICLE
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px;")
-
-                  // wrapper table
-                  table(border="0" cellpadding="0" cellspacing="0" width="520"  style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;")
-                    tr
-                      td
-                        // content
-                        table(border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#7abfb4")
-                          tr
-                            td(align="center")
-                              table(border="0" cellpadding="0" cellspacing="0" width="480")
-                                tr
-                                  // vertical spacer
-                                  td(style="padding: 5px 25px 10px 25px; font-size: 0;")
-                                tr
-                                  td(style="border-top: 4px solid #d7ebe8; font-size: 0;" width="100%")
-                                tr
-                                  td(style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
-                                    LETTERS TO THE EDITOR
-
-                        // headline
-                        table(border="0" cellpadding="0" cellspacing="0" width="480" align="center")
-                          tr
-                            td(style="padding: 10px 0px 20px 0px;")
-                              a(href="#" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #7abfb4;").
-                                Ten Tips for Maximizing the Effectiveness of Emergency Medicine Procedure Laboratories
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; color: #666666;").
-                              Joshua D. Lenchus, DO
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; font-style: italic; color: #666666;").
-                              The Journal of the American Osteopathic Association, December 2016, Vol. 116, 762. doi:10.7556/jaoa.2016.150
-                          tr
-                            td(style="padding: 0px 0px 20px 0px;")
-                              // BUTTON
-                              table(width="100%" border="0" cellspacing="0" cellpadding="0")
-                                tr
-                                  td(align="center" style="padding: 0;")
-                                    table(border="0" cellspacing="0" cellpadding="0")
-                                      tr
-                                        td(align="center")
-                                          a(href="#" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #7abfb4; border-top: 10px solid #7abfb4; border-bottom: 10px solid #7abfb4; border-left: 20px solid #7abfb4; border-right: 20px solid #7abfb4; display: inline-block;").
-                                            READ NOW #[span(style="text-transform: none; font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; letter-spacing: .5px; background-color: #7abfb4;") (Free)]
-
-
-
-            // ARTICLE
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px;")
-
-                  // wrapper table
-                  table(border="0" cellpadding="0" cellspacing="0" width="520"  style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;")
-                    tr
-                      td
-                        // header
-                        table(border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#a464c5")
-                          tr
-                            td(align="center")
-                              table(border="0" cellpadding="0" cellspacing="0" width="480")
-                                tr
-                                  // vertical spacer
-                                  td(style="padding: 5px 25px 10px 25px; font-size: 0;")
-                                tr
                                   td(style="border-top: 4px solid #dbc1e8; font-size: 0;" width="100%")
                                 tr
-                                  td(style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
+                                  td(class="body-text" style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
                                     ORIGINAL CONTRIBUTION
 
-                        // body
-                        table(border="0" cellpadding="0" cellspacing="0" width="480" align="center")
+                    tr
+                      td
+                        // ARTICLE BODY
+
+                        // double-article -- no border-bottom on this table
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc;")
                           tr
-                            td(style="padding: 10px 0px 20px 0px;")
-                              a(href="http://jaoa.org/article.aspx?articleid=2588519" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #a464c5;").
-                                Assessment of Hospital Staff’s Knowledge of Osteopathic Manipulative Medicine: A Survey-Based Study
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; color: #666666;").
-                              Jessica B. Smith-Kelly, DO; Andres Cardenas, PhD, MPH
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; font-style: italic; color: #666666;").
-                              The Journal of the American Osteopathic Association, December 2016, Vol. 116, 764-769. doi:10.7556/jaoa.2016.151
-                          tr
-                            td(style="padding: 0px 0px 20px 0px;")
-                              // BUTTON
-                              table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                            td(class="padding" style="padding: 10px 0px 0px 0px;" align="center")
+                              table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
                                 tr
-                                  td(align="center" style="padding: 0;")
-                                    table(border="0" cellspacing="0" cellpadding="0")
+                                  td(style="padding: 0px 0px 20px 0px;")
+                                    a(class="body-text" href="#" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #a464c5;").
+                                      Assessment of Hospital Staff’s Knowledge of Osteopathic Manipulative Medicine: A Survey-Based Study
+                                tr
+                                  td(class="body-text" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-style: italic; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                                    Jessica B. Smith-Kelly, DO; Andres Cardenas, PhD, MPH
+                                tr
+                                  td(class="body-text" style="padding: 0px 0px 25px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                                    Osteopathic manipulative treatment can shorten hospital length of stay, yet hospital staff may be unaware of this treatment option. The authors investigated knowledge of osteopathic manipulative medicine by job category at one hospital.
+ 
+                                tr
+                                  td(style="padding: 0px 0px 20px 0px;" align="center")
+                                    // BUTTON
+                                    table(width="100%" border="0" cellspacing="0" cellpadding="0")
                                       tr
-                                        td(align="center")
-                                          a(href="http://jaoa.org/article.aspx?articleid=2588519" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #a464c5; border-top: 10px solid #a464c5; border-bottom: 10px solid #a464c5; border-left: 20px solid #a464c5; border-right: 20px solid #a464c5; display: inline-block;").
+                                        td(align="center" style="padding: 0;")
+                                          a(class="body-text" href="#" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #a464c5; border-top: 10px solid #a464c5; border-bottom: 10px solid #a464c5; border-left: 20px solid #a464c5; border-right: 20px solid #a464c5; display: inline-block;").
                                             READ NOW
+
+                          // double-article, so add these 2 rows
                           tr
                             td(style="padding: 0px 0px 10px 0px; border-bottom: 1px solid #cccccc; font-size: 0;")
                           tr
                             td(style="padding: 0px 0px 10px 0px; font-size: 0;")
 
-                        // body
-                        table(border="0" cellpadding="0" cellspacing="0" width="480" align="center")
+                        // ARTICLE BODY
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;")
                           tr
-                            td(style="padding: 10px 0px 20px 0px;")
-                              a(href="http://jaoa.org/article.aspx?articleid=2588519" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #a464c5;").
-                                Association Between WIC Enrollment and Exclusive Breastfeeding at 3 Months Postpartum Among Low-Income Mothers
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; color: #666666;").
-                              John Francescon, OMS III; Zelalem T. Haile, PhD, MPH; David Kling, OMS III; Ilana Chertok, PhD, MSN, RN, IBCLC
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; font-style: italic; color: #666666;").
-                              The Journal of the American Osteopathic Association, December 2016, Vol. 116, 770-779. doi:10.7556/jaoa.2016.152
-                          tr
-                            td(style="padding: 0px 0px 20px 0px;")
-                              // BUTTON
-                              table(width="100%" border="0" cellspacing="0" cellpadding="0")
+                            td(class="padding" style="padding: 10px 0px 0px 0px;" align="center")
+                              table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
                                 tr
-                                  td(align="center" style="padding: 0;")
-                                    table(border="0" cellspacing="0" cellpadding="0")
+                                  td(style="padding: 0px 0px 20px 0px;")
+                                    a(class="body-text" href="#" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #a464c5;").
+                                      Association Between WIC Enrollment and Exclusive Breastfeeding at 3 Months Postpartum Among Low-Income Mothers 
+                                tr
+                                  td(class="body-text" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-style: italic; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                                    John Francescon, OMS III; Zelalem T. Haile, PhD, MPH; David Kling, OMS III; Ilana Chertok, PhD, MSN, RN, IBCLC
+                                tr
+                                  td(class="body-text" style="padding: 0px 0px 25px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                                    The association between exposure to the Special Supplemental Nutrition Program for Women, Infants, and Children and exclusive breastfeeding at 3 months postpartum was examined.
+ 
+ 
+                                tr
+                                  td(style="padding: 0px 0px 20px 0px;" align="center")
+                                    // BUTTON
+                                    table(width="100%" border="0" cellspacing="0" cellpadding="0")
                                       tr
-                                        td(align="center")
-                                          a(href="http://jaoa.org/article.aspx?articleid=2588519" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #a464c5; border-top: 10px solid #a464c5; border-bottom: 10px solid #a464c5; border-left: 20px solid #a464c5; border-right: 20px solid #a464c5; display: inline-block;").
-                                            READ NOW
-
-
-            // ARTICLE
-            // container table
-            table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
-              tr
-                td(align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px;")
-
-                  // wrapper table
-                  table(border="0" cellpadding="0" cellspacing="0" width="520"  style="border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;")
-                    tr
-                      td
-                        // header
-                        table(border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#f26046")
-                          tr
-                            td(align="center")
-                              table(border="0" cellpadding="0" cellspacing="0" width="480")
-                                tr
-                                  // vertical spacer
-                                  td(style="padding: 5px 25px 10px 25px; font-size: 0;")
-                                tr
-                                  td(style="border-top: 4px solid #fabfb5; font-size: 0;" width="100%")
-                                tr
-                                  td(style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
-                                    CLINICAL REVIEW
-
-                        // body
-                        table(border="0" cellpadding="0" cellspacing="0" width="480" align="center")
-                          tr
-                            td(style="padding: 10px 0px 20px 0px;")
-                              a(href="http://jaoa.org/article.aspx?articleid=2588522" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #f26046;").
-                                Are Low-Carbohydrate Diets Safe and Effective? 
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; color: #666666;").
-                              Heather Fields, MD; Barbara Ruddy, MD; Mark R. Wallace, MD; Amit Shah, MD; Denise Millstine, MD
-                          tr
-                            td(style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 17px; font-style: italic; color: #666666;").
-                              The Journal of the American Osteopathic Association, December 2016, Vol. 116, 788-793. doi:10.7556/jaoa.2016.154
-                          tr
-                            td(style="padding: 0px 0px 20px 0px;")
-                              // BUTTON
-                              table(width="100%" border="0" cellspacing="0" cellpadding="0")
-                                tr
-                                  td(align="center" style="padding: 0;")
-                                    table(border="0" cellspacing="0" cellpadding="0")
-                                      tr
-                                        td(align="center")
-                                          a(href="http://jaoa.org/article.aspx?articleid=2588522" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #f26046; border-top: 10px solid #f26046; border-bottom: 10px solid #f26046; border-left: 20px solid #f26046; border-right: 20px solid #f26046; display: inline-block;").
+                                        td(align="center" style="padding: 0;")
+                                          a(class="body-text" href="#" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #a464c5; border-top: 10px solid #a464c5; border-bottom: 10px solid #a464c5; border-left: 20px solid #a464c5; border-right: 20px solid #a464c5; display: inline-block;").
                                             READ NOW
 
 
 
+        tr
+          td(align="center")
+            include ./includes/v1/footer
+                        
         tr
           td(style="padding: 0px 0px 36px 0px;")

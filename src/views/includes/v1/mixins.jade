@@ -1,0 +1,56 @@
+mixin button(color)
+  // BUTTON
+  table(width="100%" border="0" cellspacing="0" cellpadding="0")
+    tr
+      td(align="center" style="padding: 0;")
+        a(class="body-text" href="#" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #{color}; border-top: 10px solid #{color}; border-bottom: 10px solid #{color}; border-left: 20px solid #{color}; border-right: 20px solid #{color}; display: inline-block;").
+          READ NOW
+
+mixin article(data)
+  // ARTICLE
+  tr
+    td
+      table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
+        tr
+          td(class="padding" align="center" bgcolor="#ffffff" style="padding: 0px 0px 40px 0px;")
+  
+            // wrapper table
+            table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="520")
+              tr
+                td
+                  // SECTION TITLE
+                  table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#{data.color.full}")
+                    tr
+                      td(class="section-title" align="center")
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480")
+                          tr
+                            // vertical spacer
+                            td(style="padding: 5px 25px 10px 25px; font-size: 0;")
+                          tr
+                            td(style="border-top: 4px solid #{data.color.tint}; font-size: 0;" width="100%")
+                          tr
+                            td(class="body-text" style="padding: 5px 0px 10px 0px; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 26px; line-height: 30px; text-transform: uppercase; color: #ffffff;").
+                              #{data.category}
+  
+              tr
+                td
+                  // ARTICLE BODY
+                  table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style=(data.series == false || data.series && data.series.nth == data.series.n) ? "border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;" : "border-left: 1px solid #cccccc; border-right: 1px solid #cccccc;")
+                    tr
+                      td(class="padding" style="padding: 10px 0px 0px 0px;" align="center")
+                        table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
+                          tr
+                            td(style="padding: 0px 0px 20px 0px;")
+                              a(class="body-text" href="#" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 28px; line-height: 34px; color: #{data.color.full};").
+                                #{data.headline}
+                          tr
+                            td(class="body-text" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-style: italic; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                              #{data.authors}
+                          tr
+                            td(class="body-text" style="padding: 0px 0px 25px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                              #{data.blurb}
+
+//-                    tr
+//-                      td(style="padding: 0px 0px 10px 0px; border-bottom: 1px solid #cccccc; font-size: 0;")
+//-                    tr
+//-                      td(style="padding: 0px 0px 10px 0px; font-size: 0;")
