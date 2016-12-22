@@ -106,3 +106,6 @@ table {
 * [localfont.com - Download fonts from googlefonts](http://www.localfont.com/)
 
 * [HTML | Email Design Reference](https://templates.mailchimp.com/development/html/)
+
+#####Thu Dec 22 12:02:39 2016 CST
+* [Conditional Code for Outlook > Litmus](https://litmus.com/community/discussions/396-conditional-code-for-outlook)
