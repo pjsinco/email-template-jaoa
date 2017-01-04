@@ -12,6 +12,19 @@ mixin button(color, url)
         a(class="body-text" href="#{url}" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #{color}; border-top: 10px solid #{color}; border-bottom: 10px solid #{color}; border-left: 20px solid #{color}; border-right: 20px solid #{color}; display: inline-block;").
           READ NOW
 
+mixin ad
+  tr
+    td
+      table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
+        tr
+          td(class="padding" align="center" bgcolor="#ffffff" style=paddingStyle)
+            // wrapper table
+            table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="520")
+              tr
+                td(align="center" style="font-size: 13px; color: #666666; font-family: Helvetica, Arial, sans-serif; font-weight: 200; letter-spacing: 2px;")
+                  | ADVERTISEMENT
+      
+
 mixin article(data)
   // ARTICLE
   tr
