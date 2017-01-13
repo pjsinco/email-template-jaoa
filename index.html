@@ -8,7 +8,7 @@
 
       @font-face {
         font-family: 'Raleway';
-        font-weight: 400;
+x       font-weight: 400;
         font-style: normal;
         src: url('http://fonts.gstatic.com/s/raleway/v11/JDau3G46nqY5-B-S9E_nwg.eot');
         src: url('http://fonts.gstatic.com/s/raleway/v11/JDau3G46nqY5-B-S9E_nwg.eot?#iefix') format('embedded-opentype'),
@@ -51,7 +51,13 @@
 
       table{border-collapse:collapse !important;}
 
-      body{height:100% !important; margin:0; padding:0; width:100% !important;}
+      body{
+        height:100% !important; 
+        margin:0; 
+        padding:0; 
+        width:100% !important;
+        -webkit-font-smoothing: subpixel-antialiased;
+      }
     
       /* iOS BLUE LINKS */
       .appleBody a {color:#68440a; text-decoration: none;}
@@ -85,7 +91,8 @@
             display: none !important;
           }
     
-          img[class="fluid-image"]{
+          img[class="fluid-image"],
+          a[class="Ad"] > img{
             max-width: 100% !important;
             height:auto !important;
           }
@@ -98,6 +105,22 @@
           /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
           td[class="padding"]{
             padding: 10px 5% 15px 5% !important;
+          }
+  
+          td[class="padding-extra-top"]{
+            padding: 20px 5% 15px 5% !important;
+          }
+
+          td[class="padding-no-bottom"]{
+            padding: 10px 5% 0px 5% !important;
+          }
+
+          td[class="padding-no-top"]{
+            padding: 0px 5% 15px 5% !important;
+          }
+
+          td[class="padding-no-bottom-no-top"]{
+            padding: 0px 5% 0px 5% !important;
           }
 
           td[class="intro-text"]{

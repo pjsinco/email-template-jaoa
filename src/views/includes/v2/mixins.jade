@@ -4,13 +4,13 @@ mixin tagSolid(backgroundColor, textColor, text)
 mixin tagBordered(borderColor, textColor, text)
   span(style="padding: 3px 6px; vertical-align: bottom; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 28px; letter-spacing: .5px; border-top: 2px solid #{borderColor}; border-right: 2px solid #{borderColor}; border-bottom: 2px solid #{borderColor}; border-left: 2px solid #{borderColor}; color: #{textColor};") #{text}
 
-mixin button(color, url)
+mixin button(color, url, text)
   // BUTTON
   table(width="100%" border="0" cellspacing="0" cellpadding="0")
     tr
       td(align="center" style="padding: 0;")
         a(class="body-text" href="#{url}" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #{color}; border-top: 10px solid #{color}; border-bottom: 10px solid #{color}; border-left: 20px solid #{color}; border-right: 20px solid #{color}; display: inline-block;").
-          READ NOW
+          #{text}
 
 mixin ad
   tr
@@ -31,19 +31,27 @@ mixin article(data)
     td
       table(border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;")
         tr
+          if (data.series && data.series.nth === 1)
+            -var className = 'padding-no-bottom'
+          else if (data.series && data.series.nth !== data.series.n)
+            -var className = 'padding-no-bottom-no-top'
+          else if (data.series && data.series.nth === data.series.n)
+            -var className = 'padding-no-top'
+          else
+            -var className = 'padding'
   
           if (data.series && data.series.nth !== data.series.n)
             -var paddingStyle = 'padding: 0'
           else 
             -var paddingStyle = 'padding: 0px 0px 40px 0px;'
 
-          td(class="padding" align="center" bgcolor="#ffffff" style=paddingStyle)
+          td(class=className align="center" bgcolor="#ffffff" style=paddingStyle)
             // wrapper table
             table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="520")
-              tr
-                td
+              if !(data.series && data.series.nth !== 1)
+                tr
+                  td
 
-                  if !(data.series && data.series.nth === data.series.n)
                     // SECTION TITLE
                     table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" bgcolor="#{data.color.full}")
                       tr
@@ -82,11 +90,11 @@ mixin article(data)
                       -var paddingStyle = "padding: 10px 0px 0px 0px;"
 
                     tr
-                      td(class="padding" style=paddingStyle align="center")
+                      td(class="padding-no-bottom" style=paddingStyle align="center")
                         table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
                           tr
                             td(style="padding: 0px 0px 20px 0px;")
-                              a(class="body-text" href="#{data.url}" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: normal; font-size: 22px; line-height: 28px; color: #{data.color.full};")
+                              a(class="body-text" href="#{data.url}" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: 500; font-size: 22px; line-height: 28px; color: #{data.color.full};")
                                 | #{data.headline}
                                 if data.video
                                   | &nbsp;
@@ -98,13 +106,19 @@ mixin article(data)
                                   +tagSolid(colorMap.blue.lightest, colorMap.blue.full, 'FREE') 
                                   | &nbsp;
 
-                          tr
-                            td(class="body-text" style="padding: 0px 0px 25px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
-                              #{data.blurb}
                           if data.authors
+                            if data.blurb
+                              -var paddingStyle = 'padding: 0px 0px 20px 0px;'
+                            else
+                              -var paddingStyle = 'padding: 0px 0px 5px 0px;'
                             tr
-                              td(class="body-text" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 18px; color: #9d9d9d;").
+                              td(class="body-text" style="padding: 0px 0px 20px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; text-align: left; line-height: 18px; color: #909090;").
                                 #{data.authors}
+
+                          if data.blurb
+                            tr
+                              td(class="body-text" style="padding: 0px 0px 25px 0px; font-family: 'Roboto', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: #666666;").
+                                #{data.blurb}
 
                   if (data.series && data.series.nth !== data.series.n)
                     tr
