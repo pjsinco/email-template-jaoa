@@ -1,16 +1,16 @@
 mixin tagSolid(backgroundColor, textColor, text)
-  span(style="padding: 3px 6px; vertical-align: bottom; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 28px; letter-spacing: .5px; background-color: #{backgroundColor}; color: #{textColor};") #{text}
+  span(style="padding: 3px 9px 3px 9px; vertical-align: bottom; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 28px; letter-spacing: .5px; background-color: #{backgroundColor}; color: #{textColor};") &nbsp;#{text}&nbsp;
 
 mixin tagBordered(borderColor, textColor, text)
-  span(style="padding: 3px 6px; vertical-align: bottom; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 28px; letter-spacing: .5px; border-top: 2px solid #{borderColor}; border-right: 2px solid #{borderColor}; border-bottom: 2px solid #{borderColor}; border-left: 2px solid #{borderColor}; color: #{textColor};") #{text}
+  span(style="padding: 3px 9px 3px 9px; vertical-align: bottom; font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 28px; letter-spacing: .5px; border-top: 2px solid #{borderColor}; border-right: 2px solid #{borderColor}; border-bottom: 2px solid #{borderColor}; border-left: 2px solid #{borderColor}; color: #{textColor};") &nbsp;#{text}&nbsp;
 
 mixin button(color, url, text)
   // BUTTON
   table(width="100%" border="0" cellspacing="0" cellpadding="0")
     tr
       td(align="center" style="padding: 0;")
-        a(class="body-text" href="#{url}" target="_blank" style="font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #{color}; border-top: 10px solid #{color}; border-bottom: 10px solid #{color}; border-left: 20px solid #{color}; border-right: 20px solid #{color}; display: inline-block;").
-          #{text}
+        a(class="body-text" href="#{url}" target="_blank" style="padding: 0px 10px 0px 10px; font-size: 15px; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #{color}; border-top: 10px solid #{color}; border-bottom: 10px solid #{color}; border-left: 20px solid #{color}; border-right: 20px solid #{color}; display: inline-block;").
+          &nbsp;#{text}&nbsp;
 
 mixin ad
   tr
@@ -75,13 +75,17 @@ mixin article(data)
                   // ARTICLE BODY
                   table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style=(data.series == false || data.series && data.series.nth == data.series.n) ? "border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;" : "border-left: 1px solid #cccccc; border-right: 1px solid #cccccc;")
                     if data.image_src
+                      if data.image_link
+                        -var imageUrl = data.image_link
+                      else 
+                        -var imageUrl = data.url
                       tr
                         td(class="padding-feature-image" style="padding-top: 20px; padding-bottom: 5px; padding-left: 0; padding-right: 0;" align="center")
                           // content
                           table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
                             tr
                               td
-                                a(href="#{data.url}" style="text-decoration: none;")
+                                a(href="#{imageUrl}" style="text-decoration: none;" target="_blank")
                                   img(class="fluid-image" src="#{data.image_src}" width="480" height="240" border="0" alt="Medical illustration" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 16px;")
     
                     if data.series && data.series.nth !== 1
@@ -94,17 +98,16 @@ mixin article(data)
                         table(class="wrapper" border="0" cellpadding="0" cellspacing="0" width="480" align="center")
                           tr
                             td(style="padding: 0px 0px 20px 0px;")
-                              a(class="body-text" href="#{data.url}" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: 500; font-size: 22px; line-height: 28px; color: #{data.color.full};")
-                                | #{data.headline}
-                                if data.video
+                              | #[a(class="body-text" href="#{data.url}" style="text-decoration: none; font-family: 'Raleway', Helvetica, arial, sans-serif; font-weight: 500; font-size: 22px; line-height: 28px; color: #{data.color.full};" target="_blank") #{data.headline}&nbsp;]
+                              if data.video
+                                | &nbsp;
+                                +tagSolid(colorMap.red.lightest, colorMap.red.full, 'VIDEO')
+                                unless data.free
                                   | &nbsp;
-                                  +tagSolid(colorMap.red.lightest, colorMap.red.full, 'VIDEO')
-                                  unless data.free
-                                    | &nbsp;
-                                if data.free
-                                  | &nbsp;
-                                  +tagSolid(colorMap.blue.lightest, colorMap.blue.full, 'FREE') 
-                                  | &nbsp;
+                              if data.free
+                                | &nbsp;
+                                +tagSolid(colorMap.blue.lightest, colorMap.blue.full, 'FREE') 
+                                | &nbsp;
 
                           if data.authors
                             if data.blurb

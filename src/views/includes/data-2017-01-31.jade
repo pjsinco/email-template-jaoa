@@ -1,0 +1,141 @@
+include ./data-color-map
+include ./data-category-colors
+
+- var articles = [
+-  {
+-    "headline": "Landmark Article Transforms Traditional View of the Autonomic Nervous System",
+-    "category": "Letters to the Editor",
+-    "authors": "Christopher L. Hoehmann, OMS III; Joshua A. Cuoco, OMS III, MS",
+-    "blurb": "",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599976",
+-    "color": colorMap.green,
+-    "free": true,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "JAOA Peer Reviewers, 2016",
+-    "category": "AOA Communication",
+-    "authors": "",
+-    "blurb": "",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599977",
+-    "color": colorMap.green,
+-    "free": true,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Use of Patient-Authored Prehistory to Improve Patient Experiences and Accommodate Federal Law",
+-    "category": "Original Contribution",
+-    "authors": "Michael J. Warner, DO, CPC; Thomas J. Simunich, MS, MBA; Margaret K. Warner, DO; Joseph Dado, MS",
+-    "blurb": "The traditional verbal question-and-answer format of a patient history limits the diagnostic process. Incorporating a prehistory form from patients can improve patient-physician encounters.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599978",
+-    "color": colorMap.purple,
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Somatic Dysfunction in the Diagnosis of Uncommon Ectopic Pregnancies: Surgical Correlation and Comparison With Related Pathologic Findings",
+-    "category": "Brief Report",
+-    "authors": "Daniel Martingano, DO; Hannah Canepa, OMS II; Setareh Fararooy, OMS III; Dmitriy Rybitskiy, DO; Sam Shahem, MD; Francis X. Martingano, MD; George Aglialoro, DO",
+-    "blurb": "Many women with ectopic pregnancies present under emergent conditions. Osteopathic structural examinations may help physicians locate the fertilized ovum, thus enhancing diagnostic workup and surgical care.",
+-    "image_src": "http://aoa-do.informz.net/aoa-do/data/images/jaoa/ectopic-2017-01-31.jpg",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599979",
+-    "color": colorMap.purple,
+-    "free": true,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Common Foot and Ankle Injuries: What Not to Miss and How Best to Manage",
+-    "category": "Review",
+-    "authors": "Jessica Reissig, DO; Adam Bitterman, DO; Simon Lee, MD",
+-    "blurb": "Physicians’ understanding of foot and ankle injury anatomy, diagnoses, and management will allow athletes—the primary population that presents with such injuries—to more efficiently return to competitive activity and avoid long-term disability.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599980",
+-    "color": colorMap.purple,
+-    "free": true,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Pectus Excavatum: A Review of Diagnosis and Current Treatment Options",
+-    "category": "Clinical Practice",
+-    "authors": "Irfaan Abid, MHS, OMS IV; MennatAllah M. Ewais, MD; Joseph Marranca, BS; Dawn E. Jaroszewski, MD",
+-    "blurb": "More patients with pectus excavatum are seeking evaluation now that additional information and treatment options are available. Vacuum bell treatment, for example, is now approved in the United States and may be an appropriate conservative treatment for younger patients.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599969",
+-    "color": colorMap.purple,
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Comparison of Basic Science Knowledge Expectations for DO and MD Students",
+-    "category": "Medical Education",
+-    "authors": "Glenn E. Davis, MS; Gregory G. Gayer, PhD ",
+-    "blurb": "Is preparation in the basic sciences equally rigorous between osteopathic and allopathic medical students? The authors analyzed multiple performance variables between the 2 groups to find out.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599970",
+-    "color": colorMap.purple,
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Buerger Test for Erythromelalgia Revisited ",
+-    "category": "Special Communication",
+-    "authors": "William F. Wright, DO, MPH; Manu Rajachandran, MD",
+-    "blurb": "Physicians using the Buerger test should elevate a patient’s limb to be perpendicular to the horizontal plane and then gradually lower the leg to find the angle at which the color returns (ie, the angle of circulatory sufficiency).",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599971",
+-    "color": colorMap.purple,
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "Ruptured Primary Omental Pregnancy Mimicking Adnexal Implantation",
+-    "category": "Case Report",
+-    "authors": "Daniel Martingano, DO; Anton Bogdanov, MD; Dmitriy Rybitskiy, DO; Francis X. Martingano, MD; Sam Shahem, MD",
+-    "blurb": "Maternal mortality from abdominal pregnancy is 7.7 times higher than from tubal ectopic pregnancy. In this case, osteopathic structural examination findings helped identify the abdominal location of a ruptured ectopic pregnancy.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599972",
+-    "color": colorMap.purple,
+-    "free": false,
+-    "video": false,
+-    "series": { "nth": 1, "n": 2 }
+-  },
+-  {
+-    "headline": "Long Thoracic Nerve Injury Caused by Overhead Weight Lifting Leading to Scapular Dyskinesis and Medial Scapular Winging",
+-    "category": "Case Report",
+-    "authors": "Justin B. Berthold, DO; Timothy M. Burg, DO; Ryan Paul Nussbaum, OMS IV",
+-    "blurb": "Repetitive overhead arm movements could predispose individuals to injury. A patient who presented with scapular winging was found to have nerve damage caused by weight-lifting exercises.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599973",
+-    "color": colorMap.purple,
+-    "image_src": "http://aoa-do.informz.net/aoa-do/data/images/jaoa/video-long-thoracic-2017-01-31.jpg",
+-    "image_link": "https://www.youtube.com/watch?v=R5_t7NpcMZ4",
+-    "free": false,
+-    "video": true,
+-    "series": { "nth": 2, "n": 2 }
+-  },
+-  {
+-    "headline": "Diffuse Idiopathic Skeletal Hyperostosis",
+-    "category": "Clinical Images",
+-    "authors": "Zaid Saffo, DO; Paul Pulice, DO",
+-    "blurb": "",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599974",
+-    "color": colorMap.red,
+-    "image_src": "http://aoa-do.informz.net/aoa-do/data/images/jaoa/clinical-image-3-2017-01-31.jpg",
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  },
+-  {
+-    "headline": "CME Quiz",
+-    "category": "CME Quiz",
+-    "authors": "",
+-    "blurb": "Earn 2 Category 1-B credits.",
+-    "url": "http://jaoa.org/article.aspx?articleid=2599975",
+-    "color": colorMap.blue,
+-    "free": false,
+-    "video": false,
+-    "series": false
+-  }
+- ];
