@@ -1,0 +1,130 @@
+include ./data-color-map
+include ./data-category-colors
+
+- var articles = [
+-   {
+-     "headline": "History of Osteopathic Medicine: Still Relevant?",
+-     "category": "Editorial",
+-     "authors": "Robert Orenstein, DO",
+-     "blurb": "",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607289",
+-     "color": colorMap.green,
+-     "free": true,
+-     "video": false,
+-     "series": false
+-   },
+-   {
+-     "headline": "Opening the Doors of Medicine to Women",
+-     "category": "Still Relevant?",
+-     "authors": "Thomas A. Quinn, DO",
+-     "blurb": "",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607290",
+-     "color": colorMap.green,
+-     "free": false,
+-     "video": false,
+-     "series": false
+-   },
+-   {
+-     "headline": "Predictors of Sunburn Risk Among Florida Residents",
+-     "category": "Original Contribution",
+-     "authors": "Sergey Arutyunyan, MS, OMS IV; Sarah V. Alfonso, BA; Nilda Hernandez, AA; Tracy Favreau, DO; M. Isabel Fernández, PhD",
+-     "blurb": "Skin cancer is the most common cancer in the United States, and sunburn is a major modifiable and known risk factor. The risk factors for sunburn, however, may not be as well understood.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607291",
+-     "image_link": "https://www.youtube.com/watch?v=EHLsO695U-4",
+-     "image_src": "http://aoa-mnews.informz.net/aoa-mnews/data/images/2017-03/video-sunburn-2.png",
+-     "color": colorMap.purple,
+-     "free": true,
+-     "video": true,
+-     "series": { "nth": 1, "n": 3 }
+-   },
+-   {
+-     "headline": "Dermascope Use by Osteopathic Primary Care Physicians",
+-     "category": "Original Contribution",
+-     "authors": "Jeffrey B. Morris, OMS III; Sarah V. Alfonso, BA; Nilda Hernandez, AA; M. Isabel Fernández, PhD",
+-     "blurb": "To potentially reduce unnecessary biopsies and referrals to specialists, primary care physicians can examine suspicious skin lesions in the office with a dermascope. How many physicians are aware of this diagnostic tool?",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607292",
+-     "color": colorMap.purple,
+-     "free": false,
+-     "video": false,
+-     "series": { "nth": 2, "n": 3 }
+-   },
+-   {
+-     "headline": "Use of the Spencer Technique on Collegiate Baseball Players: Effect of Physical Performance and Self-Report Measures",
+-     "category": "Original Contribution",
+-     "authors": "Janine E. Curcio, DO; Matthew J. Grana, DO; Stacey England, DO; Paige M. Banyas, OMS IV; Benjamin D. Palmer, OMS IV; Arielle E. Placke, OMS IV; William A. Rieck Jr, OMS IV; and Amber M. Eade, PhD",
+-     "blurb": "Of all baseball players, pitchers spend the most days on the disabled list because of injuries. The Spencer technique, which is often used in professional baseball training rooms, may improve performance and decrease injury rates.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607293",
+-     "color": colorMap.purple,
+-     "free": true,
+-     "video": false,
+-     "series": { "nth": 3, "n": 3 }
+-   },
+-   {
+-     "headline": "Osteopathic Medical Student Practice of Osteopathic Manipulative Treatment During School Break",
+-     "category": "Medical Education",
+-     "authors": "Stacey Pierce-Talsma, DO, MS EdL; R. Mitchell Hiserote, DO; Gregg Lund, DO",
+-     "blurb": "With student interest in osteopathic manipulative treatment generally decreasing with each training year, understanding students’ osteopathic manipulative treatment practice patterns and interest could help guide curricular steps to facilitate this interest.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607294",
+-     "color": colorMap.purple,
+-     "free": false,
+-     "video": false,
+-     "series": false
+-   },
+-   {
+-     "headline": "A Qualitative, Interview-Based Study of the Health Policy Fellowship's Osteopathic Identity",
+-     "category": "Special Communication",
+-     "authors": "Daniel Skinner, PhD; Berkeley Franz, AMRS, PhD",
+-     "blurb": "In a time of health care reform, this fellowship program trains osteopathic physicians and other professionals to establish their voices and influence policy.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607295",
+-     "color": colorMap.purple,
+-     "free": false,
+-     "video": false,
+-     "series": false
+-   },
+-   {
+-     "headline": "Gabapentin-Induced Bullous Pemphigoid",
+-     "category": "Case Report",
+-     "authors": "Avram Flamm, DO, EMT-P; Sarina Sachdev, MD; Francois Dufresne, MD",
+-     "blurb": "Gabapentin, an antiepileptic medication used to manage neuropathic pain, may cause bullous pemphigoid, an autoimmune blistering dermatosis.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607296",
+-     "color": colorMap.purple,
+-     "free": false,
+-     "video": false,
+-     "series": { "nth": 1, "n": 2 }
+-   },
+-   {
+-     "headline": "Osteopathic Manipulative Treatment in the Management of Isaacs Syndrome",
+-     "category": "Case Report",
+-     "authors": "Lisa K.T. Shanahan, DO; Selena G.M. Raines, DO, MPH; Rachel L. Coggins, DO; Teanna Moore, DO; Michael Carnes, DO; Laura Griffin, DO",
+-     "blurb": "A patient with Isaacs syndrome benefited from myofascial release and osteopathic cranial manipulative medicine, suggesting that osteopathic manipulative treatment may be useful in managing other peripheral nerve hyperexcitability disorders.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607297",
+-     "color": colorMap.purple,
+-     "free": false,
+-     "video": false,
+-     "series": { "nth": 2, "n": 2 }
+-   },
+-   {
+-     "headline": "Recurrent Painful Calcium Pyrophosphate Arthroplasty",
+-     "category": "Clinical Images",
+-     "authors": "Lisa Carpenter, DO; Noelle Juliano, DO; Ronald Herb, DO",
+-     "blurb": "",
+-     "image_link": "http://jaoa.org/article.aspx?articleid=2607298",
+-     "image_src": "http://aoa-mnews.informz.net/aoa-mnews/data/images/2017-03/clinical-image-2017-03.png",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607298",
+-     "color": colorMap.red,
+-     "free": false,
+-     "video": false,
+-     "series": false
+-   },
+-   {
+-     "headline": "CME Quiz",
+-     "category": "CME Quiz",
+-     "authors": "",
+-     "blurb": "Earn 2 Category 1-B credits.",
+-     "url": "http://jaoa.org/article.aspx?articleid=2607299",
+-     "color": colorMap.blue,
+-     "free": false,
+-     "video": false,
+-     "series": false
+-   }
+- ]
