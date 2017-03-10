@@ -64,6 +64,9 @@ table {
 }
 ```
 
+###Web fonts
+* [The Ultimate Guide to Web Fonts in Email—Litmus Software, Inc.](https://litmus.com/blog/the-ultimate-guide-to-web-fonts)
+
 #####Mon Dec  5 09:10:49 2016 CST
 * [dragula - Browser drag-and-drop so simple it hurts](https://bevacqua.github.io/dragula/)
 
