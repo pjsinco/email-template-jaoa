@@ -112,3 +112,19 @@ table {
 
 #####Thu Dec 22 12:02:39 2016 CST
 * [Conditional Code for Outlook > Litmus](https://litmus.com/community/discussions/396-conditional-code-for-outlook)
+
+#####Fri Jan 19 12:34:29 2018 CST
+* [Outlook and Fallback Fonts > Litmus](https://litmus.com/community/discussions/36-outlook-and-fallback-fonts?utm_campaign=community_digest&utm_source=email&utm_medium=marketing)
+> If you can define the @font-face yourself you can use ```mso-font-alt```
+
+    ```css
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/K88pR3goAWT7BTt32Z01m5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;     ...
+      mso-font-alt: 'Arial';
+    }
+    ```
+
